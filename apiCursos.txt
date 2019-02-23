@@ -1,0 +1,67 @@
+Sustantivos:
+	*Estudiantes
+	*Modulos
+	*Cursos
+	*Profesores
+	
+Verbos:
+	*Ver(El estudiante ve los cursos disponibles)
+	*Inscribir(El estudiante se inscribe en el curso)
+	*Mostar(El estudiante ve modulos disponibles)
+	*Ver (El usuario ve su progreso en el curso)
+	*Cancelar (El estudiante cancela su inscribcion al curso)
+	*Agregar(Estudiante)
+	*Modificar(Estudiante)
+	*Mostrar(Estudiante)
+	*Agregar(Modulo)
+	*Modificar(Modulo)
+	*Mostrar(Modulo)
+	*Agregar(Curso)
+	*Modificar(Curso)
+	*Mostar(Curso)
+	*Agregar(Profesor)
+	*Modificar(Profesor)
+	*Mostrar(Profesor)
+	
+Recurso HTTP
+	GET /estudiantes
+	GET /estudiantes/{id}
+	POST /estudiantes
+		{nombre, apellido, edad, sexo, email, password}
+	PUT /estudiantes/{id}
+		{nombre, apellido, edad, sexo, email, password}
+	GET /inscripciones
+	GET /inscripciones/{id}
+	DELETE /inscripciones/{id}
+	GET /cursos
+	GET	/cursos/{id}
+	GET /cursos/{id}/modulos
+	POST /cursos
+		{nombre, descripcion, img}
+	POST /cursos/{id}/modulos
+		{nombre, contenido, img}
+	PUT /cursos/{id}
+		{nombre, descripcion, img}
+	PUT /cursos/{id}/modulos
+		{nombre, contenido, img}
+	GET /profesores
+	GET /profesores/{id}
+	POST /profesores
+		{nombre, apellido, }
+	PUT /profesores/{id}
+		{nombre, apellido, }
+
+modules = [
+    {
+        courseId: 0,
+        id: 0,
+        nombre: "Etiquetas Semanticas",
+        description: "Etiquetas main, header, nav, etc..."
+    },
+    {
+        courseId: 0,
+        id: 1,
+        nombre: "Formularios",
+        description: "Etiquetas input, buttom, etc..."
+    }
+];
